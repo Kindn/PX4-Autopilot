@@ -167,6 +167,7 @@ bool NNBSPositionControl::update(const float dt)
 		-_gain_vel.emult(_error_vel) + alpha_dot - nn_outputs - _error_pos;
 	// _thr_sp = -_gain_vel.emult(_error_vel) + alpha_dot - _w.transpose() * s - _error_pos;
 	// _thr_sp *= mass;
+	u(2) += _hover_thrust;
 	_thr_sp = u;
 
 	// PX4_INFO("error_vel: [%f %f %f]", (double)_error_vel(0), (double)_error_vel(1), (double)_error_vel(2));
