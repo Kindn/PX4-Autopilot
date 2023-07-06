@@ -6,6 +6,11 @@ CONFIG:
       buildType: RelWithDebInfo
       settings:
         CONFIG: px4_sitl_default
+    px4_sitl_nnbs:
+      short: px4_sitl_nnbs
+      buildType: RelWithDebInfo
+      settings:
+        CONFIG: px4_sitl_nnbs
     px4_sitl_replay:
       short: px4_sitl_replay
       buildType: RelWithDebInfo
